@@ -3,5 +3,27 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+
   body
-    block content
+    
+    #header
+      h1#name.rotateX Ivy Feraco
+    
+    #container
+      nav
+        ul
+          li
+            <a href='/work'>Work</a>
+          li
+            <a href='/play'>Play</a>
+          li
+            <a href='/play'>Move</a>
+          li
+            <a href='/'>Home</a>
+            
+
+  
+      #content
+          h2 #{title}
+          block content
+    
