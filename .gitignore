@@ -28,3 +28,9 @@ node_modules
 
 # Debug log from npm
 npm-debug.log
+
+# MacOs
+.DS_Store
+
+# Google cloud
+app.yaml
