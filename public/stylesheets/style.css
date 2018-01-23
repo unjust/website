@@ -47,7 +47,8 @@ table {
   0% {
     transform: rotateX(0deg); }
   100% {
-    transform: rotateX(360deg); } }
+    transform: rotateX(360deg);
+    color: green; } }
 
 .rotateX {
   animation-name: rotateX;
@@ -73,7 +74,7 @@ nav li:hover {
 
 body {
   margin: 2rem;
-  padding: 0px;
+  padding: 20px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 #header {
