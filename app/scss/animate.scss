@@ -1,0 +1,40 @@
+
+@keyframes rotateX {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+        color: green
+    }
+}
+.rotateX {
+    animation-name: rotateX;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out
+}
+
+.rotateX:hover {
+    animation-name: rotateX;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    //  transform: rotateX(180deg);
+}
+
+@keyframes space-out {
+    0% {
+        letter-spacing: auto;
+    }
+    100% {
+        letter-spacing: 100px;
+    }
+}
+
+nav li:hover {
+    animation-name: space-out;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
