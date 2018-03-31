@@ -1,0 +1,55 @@
+doctype html
+
+html
+  head
+    title=title
+    <!-- third party css -->
+    link(rel='stylesheet', href="/css/vendor/bootstrap/bootstrap.min.css")
+    link(rel='stylesheet', href="/css/vendor/magnific-popup/magnific-popup.css")
+
+    //- <!-- Custom fonts for this template -->
+    //- link(rel='stylesheet', href="vendor/font-awesome/css/font-awesome.min.css")
+    //- link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Montserrat:400,700")
+    //- link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic")
+
+    link(rel='stylesheet', href='/css/freelancer.min.css')
+    meta(charset='utf-8')
+    
+  body
+    block nav
+      include nav.pug
+
+      <!-- Header -->
+      <header class="masthead bg-primary text-white text-center">
+        <div class="container">
+          <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
+          <h1 class="text-uppercase mb-0">Hello world!!!!!!!!!!!!</h1>
+          <hr class="star-light">
+          <h2 class="font-weight-light mb-0">Web Developer - Graphic Artist - User Experience Designer</h2>
+        </div>
+      </header>
+
+    block content
+
+    block footer
+      include footer.pug
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+    block modals
+    
+    block scripts
+      <!-- Contact Form JavaScript -->
+      //- <script src="js/jqBootstrapValidation.js"></script>
+      //- <script src="js/contact_me.js"></script>
+
+      <!-- script for this template -->
+      <script src="/js/freelancer.bundled.min.js"></script>
+
+ 
+    

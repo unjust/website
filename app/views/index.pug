@@ -1,1 +1,16 @@
-p hello world!
+extends layout
+
+//- nav will be included in layout
+
+block content
+  
+  include about.pug
+  include portfolio.pug
+  include contact.pug
+  
+//- footer, scripts will be included in layout
+
+block modals
+  include work_modals.pug
+
+  
