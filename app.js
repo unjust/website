@@ -4,14 +4,12 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
 var index = require('./app/routes/index');
-var users = require('./app/routes/users');
 
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, './app/views'));
+app.set('views', path.join(__dirname, './dist/views'));
 app.set('view engine', 'pug');
 
 // uncomment after placing your favicon in /public
@@ -22,8 +20,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'dist')));
 
-app.use('/', index);
-app.use('/users', users);
+app.use('/', index);  
+
+app.listen(3000, function () {
+  console.log('app listening on port 3000.');
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
