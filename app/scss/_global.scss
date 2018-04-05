@@ -10,54 +10,34 @@ h4,
 h5,
 h6 {
   @include heading-font;
+  margin-bottom: 1rem;
 }
 
-// Custom Horizontal Rule with Star Icon
-hr.star-light,
-hr.star-dark {
-  max-width: 18rem;
-  padding: 0;
-  text-align: center;
-  border: none;
-  border-top: solid 0.25rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+.sub-head {
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
 }
 
-hr.star-light:after,
-hr.star-dark:after {
-  position: relative;
-  top: -.8em;
-  display: inline-block;
-  padding: 0 0.25em;
-  content: '\f005';
-  font-family: FontAwesome;
-  font-size: 2em;
+p {
+  line-height: 1.5;
 }
 
-hr.star-light {
-  border-color: $white;
-}
-hr.star-light:after {
-  color: $white;
-  background-color: $primary;
-}
-
-hr.star-dark {
-  border-color: $secondary;
-}
-hr.star-dark:after {
-  color: $secondary;
-  background-color: white;
-}
 
 // Section Padding Settings
 section {
   padding: 6rem 0;
+  border-bottom: 1px solid $gray-900;
+
+  &.first {
+    padding-top: 10rem;
+  }
+
   h2 {
     font-size: 2.25rem;
     line-height: 2rem;
   }
+
   @media (min-width: 992px) {
     h2 {
       font-size: 3rem;
