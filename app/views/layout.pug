@@ -4,30 +4,24 @@ html
   head
     title=title
     <!-- third party css -->
-    link(rel='stylesheet', href="/css/vendor/bootstrap/bootstrap.min.css")
-    link(rel='stylesheet', href="/css/vendor/magnific-popup/magnific-popup.css")
+    link(rel='stylesheet', href="/css/vendor/bootstrap.min.css")
+    link(rel='stylesheet', href="/css/vendor/magnific-popup.css")
 
     //- <!-- Custom fonts for this template -->
     //- link(rel='stylesheet', href="vendor/font-awesome/css/font-awesome.min.css")
     //- link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Montserrat:400,700")
     //- link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic")
 
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Open+Sans:400,600')
     link(rel='stylesheet', href='/css/freelancer.min.css')
     meta(charset='utf-8')
     
-  body
+  body#page-top
     block nav
       include nav.pug
 
-      <!-- Header -->
-      <header class="masthead bg-primary text-white text-center">
-        <div class="container">
-          <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
-          <h1 class="text-uppercase mb-0">Hello world!!!!!!!!!!!!</h1>
-          <hr class="star-light">
-          <h2 class="font-weight-light mb-0">Web Developer - Graphic Artist - User Experience Designer</h2>
-        </div>
-      </header>
+    //- block header
+    //-   include header.pug
 
     block content
 

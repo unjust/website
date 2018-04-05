@@ -3,8 +3,10 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   @include heading-font;
+
   .navbar-brand {
-    color: $white;
+    color: $gray-900;
+    text-transform: none;
   }
   .navbar-nav {
     margin-top: 1rem;
@@ -31,6 +33,7 @@
   }
 }
 @media(min-width:992px) {
+
   #mainNav {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -57,11 +60,12 @@
       }
     }
   }
-  #mainNav.navbar-shrink {
+  &.navbar-shrink {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     .navbar-brand {
       font-size: 1.5em;
     }
   }
+  
 }
