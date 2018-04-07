@@ -1,0 +1,56 @@
+extends modal_layout
+
+block prepend modal_top
+    - var modal_id = 0;
+    - var modal_title = 'Engineering at Meetup'
+
+block modal_content
+    p
+        .
+            I worked for Meetup as a frontend Web Engineer for 8 years.
+            In that time I built a variety of user-facing features for both
+            mobile and web, as well as led the frontend web team and managed other engineers.
+            I was an early advocate for mobile development and the importance of having our website be mobile-friendly.
+            
+    p
+        .
+            Here are a few notable things I worked on while I was there:
+
+    h4 Group Create
+    div(class='row')
+        div(class='col-6')
+            img(class='border',src='img/meetup/start_flow.png',width='100%')
+        div(class='col-6')
+            p 
+                .
+                    I was part of the small team to rebuild Group Create, the 
+                    user experience an organizer goes through when creating a group.
+            p
+                . 
+                    We implemented user tested designs and made changes throughout 
+                    development.
+            p
+                .
+                    Since this is our source of income at Meetup, it was very important to get this 
+                    experience right and not to affect subscriptions adversely.
+                    To do this, we had metrics and tracking in place to monitor conversion and see well the new experience performed.
+
+                p Technologies used: ES6, jQuery, Python, SASS
+
+    h4 Event Create
+    div(class='row')
+            div(class='col-6')
+                img(class='border',src='img/meetup/start_flow.png',width='100%')
+            div(class='col-6')
+                p 
+                    .
+                        Although the design was also updated, the primary goal of Event Create was to replatform one of our core features
+                        with the new technologies and stack.
+                p Technologies used: React, ES6, SASS
+
+    //- h4 Subscription and Payment
+    //- h4 Mobile web site
+    //- h4 Meetup for iPhone
+
+
+block modal_bottom

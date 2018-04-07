@@ -3,13 +3,15 @@ extends layout
 //- nav will be included in layout
 
 block content
-  include portfolio.pug
-  include about.pug
-  include contact.pug
-  
+	include portfolio.pug
+	include about.pug
+	
 //- footer, scripts will be included in layout
 
 block modals
-  include work_modals.pug
+	include modals/meetup.pug
+	include modals/noesys.pug
+	include modals/gmt.pug
+	include modals/lentini.pug
 
-  
+	
