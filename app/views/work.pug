@@ -1,12 +1,12 @@
 
-<div class="col-md-6 col-lg-4">
-	<a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+<div class="col-sm-6 col-md-4 col-lg-3">
+	<a class="portfolio-item d-block mx-auto" href="#portfolio-modal-#{work.id}">
 		<div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
 			<div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
 				<i class="fa fa-search-plus fa-3x"></i>
 				<h3>#{work.title}</h3>
 			</div>
 		</div>
-		<img class="img-fluid" src="img/portfolio/cake.png" alt="">
+		<img class="img-fluid portfolio-img" style="background-image:url('img/#{work.image}')" alt="">
 	</a>
 </div>
