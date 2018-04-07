@@ -32,7 +32,7 @@ gulp.task('clean', function(done) {
 // templates
 gulp.task('templates', function() {
   console.log('copying templates');
-  return gulp.src([ `${APP}/**/views/*` ])
+  return gulp.src([ `${APP}/**/views/**/*` ])
     .pipe(gulp.dest(DIST))
     .pipe(browserSync.stream({ once: true }));
 });
@@ -134,7 +134,7 @@ gulp.task('watch', gulp.series('start', function() {
     proxy: 'localhost:3000',
     port: 4000
   });
-  gulp.watch(`${APP}/**/views/*.pug`, gulp.series('templates'), browserSync.reload);
+  gulp.watch(`${APP}/views/`, gulp.series('templates'), browserSync.reload);
   gulp.watch(`${APP}/**/scss/*.*`, gulp.series('css:compile', 'css:minify'), browserSync.reload);
   gulp.watch(`${APP}/**/js/*.*`, gulp.series('js'), browserSync.reload);
   gulp.watch(`${APP}/img/`, gulp.series('img'), browserSync.reload);
