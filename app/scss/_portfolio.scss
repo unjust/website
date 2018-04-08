@@ -9,7 +9,8 @@
 		display: block;
 		max-width: 25rem;
 		margin-bottom: 15px;
-
+		border: 1px solid grey;
+		box-shadow: 3px 3px 3px 2px lightgray;
 	}
 
 	.portfolio-item-caption {
@@ -37,6 +38,12 @@
 			margin-bottom: 30px;
 		}
 	}
+}
+
+.portfolio-img {
+	width:100%;
+	height:200px;
+	background-size:cover;
 }
 
 .portfolio-modal {

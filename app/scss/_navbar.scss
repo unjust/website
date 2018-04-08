@@ -3,35 +3,43 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   @include heading-font;
+  box-shadow: 1px 1px 4px 1px #EEE;
+  background: white;
 
   .navbar-brand {
-    color: $gray-900;
     text-transform: none;
+    font-size: 2rem;
+    color: darkgreen;
   }
+
   .navbar-nav {
     margin-top: 1rem;
     letter-spacing: 0.0625rem;
+
     li.nav-item {
       a.nav-link {
-        color: $white;
+        // color: $white;
         &:hover {
-          color: $primary;
+          // color: $primary;
         }
         &:active,
         &:focus {
-          color: $white;
+          // color: $white;
         }
         &.active {
-          color: $primary;
+          // color: $primary;
         }
       }
     }
   }
+
   .navbar-toggler {
     font-size: 80%;
     padding: 0.8rem;
+    border-radius: none;
   }
 }
+
 @media(min-width:992px) {
 
   #mainNav {
@@ -40,29 +48,35 @@
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
+
     .navbar-brand {
-      font-size: 2em;
+      // font-size: 2em;
       -webkit-transition: font-size 0.3s;
       -moz-transition: font-size 0.3s;
       transition: font-size 0.3s;
     }
+
     .navbar-nav {
       margin-top: 0;
     }
+
     .navbar-nav > li.nav-item > a.nav-link.active {
-      color: $white;
-      background: $primary;
+      text-decoration: underline;
+      text-decoration-color: darkgreen;
       &:active,
       &:focus,
       &:hover {
-        color: $white;
-        background: $primary;
+        text-decoration: underline;
+        text-decoration-color: darkgreen;
+        text-decoration-style: wavy;
       }
     }
   }
+
   &.navbar-shrink {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    
     .navbar-brand {
       font-size: 1.5em;
     }
