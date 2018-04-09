@@ -2,4 +2,21 @@ extends modal_layout
 
 block prepend modal_top
     - var modal_id = 'feedback';
-    - var modal_title = 'Feedback Loop'
+    - var modal_title = 'Current TV ID: Feedback Loop'
+
+block modal_content
+    div(class='row')
+        div(class='col-12')
+            p(class='mb-4')
+                .
+                    Station ID that aired on Current TV, a channel that launched in 
+                    2005 based on broadcasting user created content.
+
+            div(class='embed-responsive embed-responsive-16by9')
+                <iframe src="https://player.vimeo.com/video/262240209"  class="embed-responsive-item" width="640" height="480" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            
+            p(class='mt-3') Materials and Software: 
+                span(class='text-primary') original illustrations, Adobe Illustrator, After Effects
+  
+
+block modal_bottom

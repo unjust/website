@@ -2,4 +2,22 @@ extends modal_layout
 
 block prepend modal_top
     - var modal_id = 'garden';
-    - var modal_title = 'Garden of Content'
+    - var modal_title = 'Current TV ID: A Garden of Content'
+
+
+block modal_content
+    div(class='row')
+        div(class='col-12')
+            p(class='mb-4')
+                .
+                    Station ID that aired on Current TV, a channel that launched in 
+                    2005 based on broadcasting user created content.
+
+            div(class='embed-responsive embed-responsive-16by9')
+                <iframe src="https://player.vimeo.com/video/262244860" class="embed-responsive-item" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+        
+            p(class='mt-4') Materials and Software: 
+                span(class='text-primary') original illustrations, Adobe Illustrator, After Effects
+  
+        
+block modal_bottom

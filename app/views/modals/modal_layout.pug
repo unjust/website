@@ -1,25 +1,23 @@
 block modal_top
 <div class="portfolio-modal mfp-hide" id="portfolio-modal-#{modal_id}">
     <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <a class="close-button d-block portfolio-modal-dismiss" href="#">
             <i class="fa fa-3x fa-times">x</i>
         </a>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 mx-auto">
-                    <h3 class="text-secondary mb-3">#{modal_title}</h3>
-                    
+            div(class="row")
+               <h2 class="col-12 mb-3">#{modal_title}</h3>
+
 block modal_content
     <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">    
     <span class="mb-5">#{modal_description}</span>
 
 block modal_bottom
 div(class='text-center mt-5')
-    <a class="btn btn-primary btn-lg portfolio-modal-dismiss" href="#">
+    <a class="btn btn-primary btn-lg d-block d-md-none portfolio-modal-dismiss" href="#">
         <i class="fa fa-close">Close</i>
     </a>
-</div>
-</div>
+
 </div>
 </div>
 </div>

@@ -3,3 +3,13 @@ extends modal_layout
 block prepend modal_top
     - var modal_id = 'h0l0';
     - var modal_title = 'H0l0 Event'
+
+block modal_content
+    div(class='row', style='min-height:400px')
+        div(class='col-6')
+            div(class='embed-responsive embed-responsive-1by1')
+                <iframe src="https://player.vimeo.com/video/263753224" class='embed-responsive-item' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        div(class='col-6')
+            p Clay // Abby // Jasen // Nihal // Unjust was an event held at H0l0 in Brooklyn
+
+block modal_bottom
