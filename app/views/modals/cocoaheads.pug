@@ -3,3 +3,22 @@ extends modal_layout
 block prepend modal_top
     - var modal_id = 'cocoaheads';
     - var modal_title = 'Cocoaheads Org Website';
+
+block modal_content
+    div(class='row')
+        div(class='col-12')
+            p
+                . 
+                    Cocoa was the name of Apple's early UI framework for making MacOS applications.
+                    Cocoaheads was a worldwide organization for Cocoa user groups.
+            p(class='mb-4')
+                .
+                    I was updated the organization's site with new branding, cleaner CSS,
+                    and add an interactive map for the individual groups that displayed thier next meeting.
+        div(class='col-12 responsive-limit')
+            img(class='img-fluid border', src='img/cocoaheads_lg.jpg')
+       
+
+block modal_bottom
+                
+
