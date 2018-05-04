@@ -6,7 +6,8 @@
     "node": "9.9.0"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "postinstall": "gulp"
   },
   "repository": {
     "type": "git",
